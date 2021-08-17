@@ -1,29 +1,42 @@
 import React from 'react'
 import { inventory } from '../../Data'
 import './Items.css'
+import { useRecoilState } from 'recoil'
+import { cartState } from '../../store'
 
 const Items = () => {
+
+    const [cart, setCart] = useRecoilState(cartState)
+
     return (
-        <div className='items'>
-            <h1 className='items__heading'>Available Items in Inventory</h1>
-            
-            <div className='items__list'>
-                {Object.entries(inventory).map(([key, {name, price}]) => (
-                    <div className='items__details' key={key}>
-                        <div>
-                            {name} @ <strong>${price.toFixed(2)}</strong>
+        <div>
+            <div className='items'>
+                <h1 className='items__heading'>Available Inventory Items</h1>
+                
+                <div className='items__list'>
+                    {Object.entries(inventory).map(([key, {name, price}]) => (
+                        <div className='items__details' key={key}>
+                            <div className='items__description'>
+                                {name} @ <strong>${price.toFixed(2)}</strong>
+                            </div>
+                            <div className='items__btns'>
+                                <button className='items__addBtn'
+                                onClick={() => setCart({...cart, [key]: (cart[key] || 0) + 1})}
+                                >
+                                    Add
+                                </button>
+                                {cart[key] ?
+                                <button className='items__remBtn'
+                                onClick={() => setCart({...cart, [key]: cart[key] - 1})}
+                                >
+                                    Remove
+                                </button> : ""
+                            }
+                            </div>
                         </div>
-                        <div className='items__btns'>
-                            <button className='items__addBtn'>
-                                Add
-                            </button>
-                            <button className='items__remBtn'>
-                                Remove
-                            </button>
-                        </div>
-                    </div>
-                    
-                ))}
+                        
+                    ))}
+                </div>
             </div>
         </div>
     )

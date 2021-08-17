@@ -32,6 +32,11 @@
     justify-content: space-between;
 }
 
+.items__description {
+    font-size: large;
+    color: white;
+}
+
 .items__btns {
     display: flex;
     align-items: center;
@@ -43,12 +48,21 @@ button {
     margin-left: 10px;
     cursor: pointer;
     color: whitesmoke;
-    background-color: royalblue;
+    background-color: #2196f3;
     font-size: medium;
 }
 
 button:hover {
     opacity: 0.8;
-    transition: all 0.6s ease;
-    background-color: tomato;
+    transition: all 0.4s ease;
+}
+
+.items__addBtn:hover {
+    background-color: #228B22;
+    color: white;
+}
+
+.items__remBtn:hover {
+    background-color: #f50057;
+    color: white;
 }
