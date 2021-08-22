@@ -9,19 +9,17 @@
 .app {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   color: whitesmoke
 }
 
 .left__item {
   flex: 0.5;
   margin-top: 3%;
-  padding: 30px;
-  /* margin-left: 10%; */
+  padding: 20px;
 }
 
-.cart {
+.right__item {
   flex: 0.5;
   margin-top: 3%;
-  /* margin-left: 10%; */
+  padding: 20px;
 }

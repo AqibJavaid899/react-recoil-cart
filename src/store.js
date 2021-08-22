@@ -5,7 +5,10 @@ export const cartState = atom({
     default: {},
 })
 
-
+export const shippingState = atom({
+    key: "shippingState",
+    default: {},
+})
 
 
 
