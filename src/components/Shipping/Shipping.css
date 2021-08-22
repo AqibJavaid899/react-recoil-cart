@@ -3,15 +3,18 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: whitesmoke;
-    margin-top: 30px;
+    color: white;
+    margin-top: 40px;
 }
 
 .shipping__heading {
     padding: 10px;
-    text-decoration: underline;
+    border: 1px solid #E1306C;
+    background-color: #E1306C;
+    text-align: center;
+    border-radius: 20px;
+    font-size: x-large;
 }
-
 
 .shipping__destination {
     margin-top: 20px;
@@ -20,6 +23,7 @@
 .shipping__btn {
     border-radius: 10px;
     padding: 10px;
+    font-weight: bold;
 }
 
 .shipping__btn:hover {

@@ -8,9 +8,8 @@ const Cart = () => {
     const cart = useRecoilValue(cartState)
     return (
         <div className='cart'>
-            <h1 className='cart__heading'>Cart Items</h1>
+            <h1 className='cart__heading'>Cart</h1>
             <div className='cart__items'>
-                {/* {Object.entries(cart).length === 0 ? <h3>No Items available in the Cart.</h3> : null} */}
                         <div className='cart__details'>
                             {Object.entries(cart).map(([key, quantity]) => (
                                 <>

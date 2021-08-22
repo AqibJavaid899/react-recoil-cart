@@ -9,9 +9,9 @@ const Invoice = () => {
         <div className='invoice'>
             <h1 className='invoice__heading'>Invoice Detail</h1>
             <div className='invoice__category'>
-                <span>Shipping Total : {invoiceObj.shippingTotal}</span>
-                <span>Cart Total : {invoiceObj.cartTotal}</span>
-                <span><strong>Total : {invoiceObj.total}</strong></span>
+                <span>Shipping :  {invoiceObj.shippingTotal.toFixed(2)}</span>
+                <span>SubTotal : {invoiceObj.cartTotal.toFixed(2)}</span>
+                <span><strong>Total : &nbsp;&nbsp;&nbsp;{invoiceObj.total.toFixed(2)}</strong></span>
             </div>
         </div>
     )

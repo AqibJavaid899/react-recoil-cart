@@ -4,13 +4,16 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    color: whitesmoke;
 }
 
 .invoice__heading {
-    color: whitesmoke;
-    font-weight: bold;
     padding: 10px;
-    text-decoration: underline;
+    border: 1px solid #00A699;
+    background-color: #00A699;
+    text-align: center;
+    border-radius: 20px;
+    font-size: x-large;
 }
 
 .invoice__category {
@@ -18,7 +21,6 @@
     justify-content: space-between;
     align-items: left;
     flex-direction: column;
-    color: whitesmoke;
     padding: 10px;
     font-size: large;
 }

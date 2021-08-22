@@ -9,7 +9,7 @@ const Shipping = () => {
 
     return (
         <div className='shipping'>
-            <h1 className='shipping__heading'>Shipping Destination</h1>
+            <h1 className='shipping__heading'>Shipping Options</h1>
             <div className='shipping__destination'>
                 {Object.entries(destinations).map(([country, price]) => (
                     <button className='shipping__btn' 
