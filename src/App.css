@@ -15,11 +15,29 @@
 .left__item {
   flex: 0.5;
   margin-top: 3%;
-  padding: 20px;
+  padding: 30px;
 }
 
 .right__item {
   flex: 0.5;
   margin-top: 3%;
-  padding: 20px;
+  padding: 30px;
+}
+
+@media only screen and (max-width: 800px) {
+  .left__item {
+      padding: 20px;
+  }
+  .right__item {
+    padding: 20px;
+}
+}
+
+@media only screen and (max-width: 600px) {
+  .left__item {
+      padding: 10px;
+  }
+  .right__item {
+    padding: 10px;
+}
 }

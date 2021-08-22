@@ -25,5 +25,6 @@ export const destinations = {
     US: 20,
     UK: 15,
     PAK: 5,
-    GER: 10
+    GER: 10,
+    PRC: 3
 }

@@ -1,0 +1,28 @@
+.invoice {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.invoice__heading {
+    color: whitesmoke;
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+.invoice__category {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    flex-direction: column;
+    color: whitesmoke;
+    padding: 10px;
+    font-size: large;
+}
+
+span {
+    padding: 10px;
+}

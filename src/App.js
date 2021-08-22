@@ -1,7 +1,8 @@
 import './App.css';
 import Cart from './components/Cart/Cart';
-import Invoice from './components/Invoice/Invoice';
+import Shipping from './components/Shipping/Shipping';
 import Items from './components/Items/Items';
+import Invoice from './components/Invoice/Invoice';
 
 const App = () => {
   return (
@@ -13,6 +14,9 @@ const App = () => {
         <div className='right__item'>
           <Cart />
         </div>
+      </div>
+      <div>
+        <Shipping />
       </div>
       <div>
         <Invoice />
